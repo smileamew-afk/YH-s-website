@@ -125,33 +125,24 @@
     
 //그룹과 인원추가를 만지고 싶다면 여기를 수정하세요
 const MOCK_GROUPS = [
-   { id: 'group1', name: '관리자', icon: '관' },
-    { id: 'group2', name: '1기', icon: '1' },
-    { id: 'group3', name: '1.5기', icon: '쩜' },
+    { id: 'group1', name: '에이 팀', icon: 'A' },
+    { id: 'group2', name: '비 팀', icon: 'B' },
+    { id: 'group3', name: '씨 팀', icon: 'C' },
+    { id: 'group4', name: '디 팀', icon: 'D' },
+    { id: 'group5', name: '이 팀', icon: 'E' },
 ];
 
 const MOCK_USERS = [
-    { uid: 'user-001', name: '아렌스', handle: 'user1', color: 'bg-gray-500', profile: '1', group: 'group1' },
-    { uid: 'user-002', name: '릴리포드', handle: 'user2', color: 'bg-gray-500', profile: '2', group: 'group1' },
-    { uid: 'user-003', name: 'JIJI', handle: 'user3', color: 'bg-gray-500', profile: '3', group: 'group2' },
-    { uid: 'user-004', name: '관철죽', handle: 'user4', color: 'bg-gray-500', profile: '4', group: 'group2' },
-    { uid: 'user-005', name: '라엘리아스', handle: 'user5', color: 'bg-gray-500', profile: '5', group: 'group2' },
-    { uid: 'user-006', name: '배질홀워드', handle: 'user6', color: 'bg-gray-500', profile: '6', group: 'group2' },
-    { uid: 'user-007', name: '벨리', handle: 'user7', color: 'bg-gray-500', profile: '7', group: 'group2' },
-    { uid: 'user-008', name: '삽쌀', handle: 'user8', color: 'bg-gray-500', profile: '8', group: 'group2' },
-    { uid: 'user-009', name: '심연의지배자', handle: 'user9', color: 'bg-gray-500', profile: '9', group: 'group2' },
-    { uid: 'user-010', name: '아뜌', handle: 'user10', color: 'bg-gray-500', profile: '10', group: 'group2' },
-    { uid: 'user-011', name: '열빙어', handle: 'user11, color: 'bg-gray-500', profile: '11', group: 'group2' },
-    { uid: 'user-012', name: '월하은령', handle: 'user12, color: 'bg-gray-500', profile: '12', group: 'group2' },
-    { uid: 'user-013', name: '푸푸다스', handle: 'user13, color: 'bg-gray-500', profile: '13', group: 'group2' },
-    { uid: 'user-014', name: '망월', handle: 'user14', color: 'bg-gray-500', profile: '14', group: 'group3' },
-    { uid: 'user-015', name: '멍뭉개', handle: 'user15', color: 'bg-gray-500', profile: '15', group: 'group3' },
-    { uid: 'user-016', name: '삼차', handle: 'user16', color: 'bg-gray-500', profile: '16', group: 'group3' },
-    { uid: 'user-017', name: '아로한', handle: 'user17', color: 'bg-gray-500', profile: '17', group: 'group3' },
-    { uid: 'user-018', name: '아젬학술원', handle: 'user18', color: 'bg-gray-500', profile: '18', group: 'group3' },
-    { uid: 'user-019', name: '조크', handle: 'user18', color: 'bg-gray-500', profile: '19', group: 'group3' },
-    { uid: 'user-020', name: '주둔', handle: 'user19', color: 'bg-gray-500', profile: '20', group: 'group3' },
-    { uid: 'user-021', name: '케챱', handle: 'user20', color: 'bg-gray-500', profile: '21', group: 'group3' },
+    { uid: 'user-001', name: '유저 1', handle: 'user1', color: 'bg-gray-500', profile: '1', group: 'group1' },
+    { uid: 'user-002', name: '유저 2', handle: 'user2', color: 'bg-gray-500', profile: '2', group: 'group1' },
+    { uid: 'user-003', name: '유저 3', handle: 'user3', color: 'bg-gray-500', profile: '3', group: 'group2' },
+    { uid: 'user-004', name: '유저 4', handle: 'user4', color: 'bg-gray-500', profile: '4', group: 'group2' },
+    { uid: 'user-005', name: '유저 5', handle: 'user5', color: 'bg-gray-500', profile: '5', group: 'group3' },
+    { uid: 'user-006', name: '유저 6', handle: 'user6', color: 'bg-gray-500', profile: '6', group: 'group3' },
+    { uid: 'user-007', name: '유저 7', handle: 'user7', color: 'bg-gray-500', profile: '7', group: 'group4' },
+    { uid: 'user-008', name: '유저 8', handle: 'user8', color: 'bg-gray-500', profile: '8', group: 'group4' },
+    { uid: 'user-009', name: '유저 9', handle: 'user9', color: 'bg-gray-500', profile: '9', group: 'group5' },
+    { uid: 'user-010', name: '유저 10', handle: 'user10', color: 'bg-gray-500', profile: '10', group: 'group5' },
 ];
     
     const EXAMPLE_IMAGE_URL = 'https://i.imgur.com/KDTgHmT.png';
@@ -2400,8 +2391,3 @@ const App = () => {
 
 </body>
 </html>
-
-
-
-
-
