@@ -151,7 +151,6 @@ const MOCK_USERS = [
     { uid: 'user-019', name: '조크', handle: 'user18', color: 'bg-gray-500', profile: '19', group: 'group3' },
     { uid: 'user-020', name: '주둔', handle: 'user19', color: 'bg-gray-500', profile: '20', group: 'group3' },
     { uid: 'user-021', name: '케챱', handle: 'user20', color: 'bg-gray-500', profile: '21', group: 'group3' },
-
 ];
     
     const EXAMPLE_IMAGE_URL = 'https://i.imgur.com/KDTgHmT.png;
@@ -223,7 +222,6 @@ const MOCK_USERS = [
         );
     };
 
-    // [2. 프로필 비밀번호] - 비밀번호 입력 모달
     const PasswordModal = ({ user, onConfirm, onCancel }) => {
         const [password, setPassword] = useState('');
         const [error, setError] = useState('');
@@ -609,9 +607,8 @@ const MOCK_USERS = [
         const isPasswordChanged = newPassword.length > 0;
         const isPasswordValid = isPasswordChanged && newPassword === confirmPassword;
         
-        // 변경이 없는 경우 저장 버튼 비활성화
         const isDataUnchanged = !isInfoChanged && !isPasswordChanged;
-        // 비밀번호를 변경하는데 기존 비밀번호가 틀렸거나 새 비밀번호가 유효하지 않은 경우 저장 버튼 비활성화
+    
         const isPasswordError = isPasswordChanged && (!isPasswordValid || (isPasswordSet && !oldPassword));
         const isDisabled = !isHandleValid || !isNameValid || isDataUnchanged || isPasswordError;
 
@@ -1390,8 +1387,7 @@ const App = () => {
                 name: custom.name || mockUserProfile.name,
                 handle: custom.handle || mockUserProfile.handle,
                 profileImageUrl: profileImageUrl, 
-                passwordHash: custom.passwordHash || null, // [2. 프로필 비밀번호]
-            };
+                passwordHash: custom.passwordHash || null, 
         }, [currentUserId, mockUserProfile, currentCustomProfile]); 
 
         App.currentUserProfile = currentUserProfile; 
@@ -2385,5 +2381,6 @@ const App = () => {
 
 </body>
 </html>
+
 
 
